@@ -109,10 +109,8 @@ begin
 	-- display 7SD 0 only when button pushed
     w_7SD_EN_n <= not btnC;
 	-- other 7SD are kept off
-    an(0)   <= w_7SD_EN_n;
-    an(1)   <= '1';
-    an(2)   <= '1';
-    an(3)   <= '1';
+    an <= (0 => not btnC, others => '1');
+
 	-----------------------------------------------------
 	
 end top_basys3_arch;
