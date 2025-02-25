@@ -47,7 +47,7 @@ architecture Behavioral of sevenseg_decoder_tb is
 
 begin
     test: sevenseg_decoder
-        Port map (
+        port map (
             i_Hex   => tb_Hex,
             o_seg_n => tb_Seg
         );
