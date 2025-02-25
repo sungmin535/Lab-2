@@ -71,7 +71,7 @@ entity top_basys3 is
 		sw		:	in  std_logic_vector(3 downto 0);
 		
 		-- Buttons
-		btnC	:	in	std_logic;
+		btnC	:	in	std_logic
 
 	);
 end top_basys3;
@@ -109,7 +109,7 @@ begin
 	-- display 7SD 0 only when button pushed
     w_7SD_EN_n <= not btnC;
 	-- other 7SD are kept off
-    an <= (0 => not btnC, others => '1');
+    an <= (3 => not btnC, others => '1');
 
 	-----------------------------------------------------
 	
