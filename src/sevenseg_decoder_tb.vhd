@@ -46,7 +46,7 @@ architecture Behavioral of sevenseg_decoder_tb is
     signal tb_Seg : std_logic_vector(6 downto 0);
 
 begin
-    test: sevenseg_decoder
+    sevenseg_decoder_0: sevenseg_decoder
         port map (
             i_Hex   => tb_Hex,
             o_seg_n => tb_Seg

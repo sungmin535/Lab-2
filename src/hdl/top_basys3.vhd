@@ -96,7 +96,7 @@ begin
 
 	--	Port map: wire your component up to the switches and seven-segment display cathodes
 	-----------------------------------------------------	
-    testing: sevenseg_decoder
+    sevenseg_decoder_0: sevenseg_decoder
         port map(
             i_Hex => sw,
             o_seg_n => w_sevenseg
