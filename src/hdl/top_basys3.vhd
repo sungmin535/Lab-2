@@ -76,7 +76,7 @@ entity top_basys3 is
 	);
 end top_basys3;
 
-architecture top_basys3_arch of top_basys3 is 
+architecture top_basys3 of top_basys3 is 
 	
   -- declare the component of your top-level design unit under test (UUT)
    component sevenseg_decoder is
@@ -113,4 +113,4 @@ begin
 
 	-----------------------------------------------------
 	
-end top_basys3_arch;
+end top_basys3;
