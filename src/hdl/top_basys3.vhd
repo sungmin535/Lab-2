@@ -76,7 +76,7 @@ entity top_basys3 is
 	);
 end top_basys3;
 
-architecture top_basys3 of top_basys3 is 
+architecture top_basys3_arch of top_basys3 is 
 	
   -- declare the component of your top-level design unit under test (UUT)
    component sevenseg_decoder is
@@ -109,8 +109,8 @@ begin
 	-- display 7SD 0 only when button pushed
     w_7SD_EN_n <= not btnC;
 	-- other 7SD are kept off
-    an <= (3 => not btnC, others => '1');
+    an <= (0 => not btnC, others => '1');
 
 	-----------------------------------------------------
 	
-end top_basys3;
+end top_basys3_arch;

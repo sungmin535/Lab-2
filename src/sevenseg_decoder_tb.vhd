@@ -52,7 +52,7 @@ begin
             o_seg_n => tb_Seg
         );
     
- process
+    test_process:  process
     begin
         tb_Hex <= "0000"; wait for 10 ns;
         tb_Hex <= "0001"; wait for 10 ns;
@@ -70,6 +70,7 @@ begin
         tb_Hex <= "1101"; wait for 10 ns;
         tb_Hex <= "1110"; wait for 10 ns;
         tb_Hex <= "1111"; wait for 10 ns;
+        
         wait;  
     end process;
 
