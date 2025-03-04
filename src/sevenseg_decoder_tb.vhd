@@ -42,8 +42,8 @@ architecture Behavioral of sevenseg_decoder_tb is
         );
     end component;
 
-    signal tb_Hex : std_logic_vector(3 downto 0);
-    signal tb_Seg : std_logic_vector(6 downto 0);
+    signal tb_Hex : std_logic_vector(3 downto 0) := x"0";
+    signal tb_Seg : std_logic_vector(6 downto 0) := "0000000";
 
 begin
     sevenseg_decoder_uut: sevenseg_decoder
