@@ -95,7 +95,7 @@ begin
 
 	--	Port map: wire your component up to the switches and seven-segment display cathodes
 	-----------------------------------------------------	
-    sevenseg_decoder_0: sevenseg_decoder
+    sevenseg_decoder_top: sevenseg_decoder
         port map(
             i_Hex => sw,
             o_seg_n => seg
